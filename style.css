@@ -73,6 +73,11 @@ h6 {
   src: url("assets/fonts/Roboto/static/Roboto-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("assets/fonts/Roboto/static/Roboto-Regular.ttf");
+}
+
 #main {
   font-family: "Roboto-Bold", sans-serif;
   height: 100vh;
@@ -213,4 +218,142 @@ header {
 .sidebar-nav-element > svg {
   color: white;
   width: 1.5em;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  padding: 30px;
+  padding-top: 40px;
+}
+
+.projects-block,
+.announcements-block,
+.trending-block {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.block-title {
+  font-size: 1.2em;
+  padding: 0px 2px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+}
+
+.project-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  border-left: 10px solid rgb(255, 196, 0);
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-description {
+  font-family: "Roboto-Regular", sans-serif;
+  color: rgb(107, 107, 107);
+}
+
+.project-buttons {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.project-buttons > svg {
+  width: 23px;
+}
+
+.additional-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 40px;
+}
+
+.additional-content-box-1 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.announcement-box {
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.announcement-box:last-child {
+  border: none;
+}
+
+.announcement-title {
+  font-size: 0.9em;
+}
+
+.announcement-description {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 0.8em;
+  color: rgb(107, 107, 107);
+}
+
+.additional-content-box-2 {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trending-box {
+  display: flex;
+  gap: 15px;
+}
+
+.trending-box > img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.trending-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-family: "Roboto-Regular", sans-serif;
+}
+
+.user-project {
+  color: rgb(107, 107, 107);
 }
